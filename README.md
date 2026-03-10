@@ -1,6 +1,61 @@
 # Bank_Loan_Analysis
 An end-to-end banking data analytics project. Features a SQL-based database setup, Python (Pandas/Seaborn) for Exploratory Data Analysis, and an interactive Power BI dashboard to visualize customer loans, deposits, and financial health
 
-Banking Customer & Loan AnalysisThis project provides a comprehensive analysis of banking customer behavior, loan distribution, and deposit trends. It utilizes a multi-tool approach, beginning with data extraction via SQL, deep-dive exploration in Python, and interactive visualization in Power BI.🚀 Project OverviewThe primary goal of this analysis is to understand customer demographics and their relationship with financial products like loans and deposits to help the bank optimize its service offerings.Key Insights from DashboardTotal Portfolio: The bank manages a total loan amount of $4.38bn and total deposits of $3.77bn.Loan Distribution: Business lending accounts for a significant portion of the portfolio at $2.60bn.Customer Demographics: The analysis tracks 3,000 clients. High-income bands contribute significantly to the total bank loan volume (approx. 53%).Deposit Trends: Checking accounts hold $963.28M, while savings accounts total $698.73M.🛠️ Tech StackSQL: Database management and initial data querying.Python (Pandas, Seaborn, Matplotlib): Data cleaning, statistical summary, and exploratory analysis.Power BI: Interactive dashboarding for executive-level insights.📊 Data Analysis Process1. Data Extraction (SQL)The data is stored in a MySQL database named banking_case. Queries were used to fetch customer records for analysis:SQLUSE banking_case;
-SELECT * FROM customer;
-2. Exploratory Data Analysis (Python)The Banking.ipynb notebook performs the following:Connection: Establishes a connection to the MySQL server using mysql.connector.Statistical Profiling: Uses df.describe() to understand mean income ($171k), average credit card balance ($3.1k), and risk weighting.Visualization: Analyzes correlations between gender, credit card counts, and other demographic factors.3. Dashboard Visualization (Power BI)The final dashboard provides filters for Joining Year (2013-2021), Banking Relationship, and Occupation.Loan Analysis Page: Visualizes loans by nationality, occupation, and income band.Deposit Analysis Page: Breaks down deposits by account type and fee structure.📈 Summary of FindingsIncome Impact: Customers in the "High" income band are the primary drivers for both loans and deposits.Product Usage: Business lending is the dominant loan product compared to standard bank loans and credit card balances.Customer Loyalty: Clients are categorized into loyalty tiers such as Jade, Gold, Silver, and Platinum to tailor banking services.
+Here is a professionally formatted README.md file ready for copy-pasting.
+
+Important Note: Before you upload your .ipynb file, make sure to change your SQL password line to something like password="YOUR_PASSWORD" to keep your local environment secure.
+
+Banking Customer Analysis & Financial Dashboard 🏦
+An end-to-end data analytics project that explores banking customer demographics, loan distributions, and deposit trends. This project transitions from raw database management in SQL to exploratory analysis in Python, concluding with an executive-level Power BI dashboard.
+
+📌 Project Overview
+The objective of this project is to analyze a dataset of 3,000 banking clients to identify high-value customer segments and evaluate the bank's current loan-to-deposit health.
+
+Key Metrics Visualized:
+Total Loan Portfolio: $4.38bn
+
+Total Deposits: $3.77bn
+
+Business Lending: $2.60bn
+
+Customer Base: 3,000 active clients across various income bands.
+
+🛠️ Tools & Technologies
+Database: MySQL (Data storage and retrieval)
+
+Programming: Python 3.x
+
+Libraries: Pandas, Matplotlib, Seaborn, MySQL-Connector
+
+Visualization: Power BI Desktop
+
+📂 Project Structure
+banking_case_database_sql.sql: SQL scripts for database initialization and table queries.
+
+Banking.ipynb: Jupyter Notebook containing data cleaning, statistical profiling, and correlation heatmaps.
+
+Banking Analysis.pbix: The Power BI file containing the interactive dashboard.
+
+Dashboard_Preview.pdf: Screenshots of the multi-page dashboard (Loan Analysis, Deposit Analysis, and Summary).
+
+📊 Analysis Insights
+1. Data Processing (SQL & Python)
+Connected to a MySQL instance to pull customer records.
+
+Conducted statistical analysis on income bands (High, Mid, Low) and credit card balances.
+
+Generated correlation heatmaps to visualize the relationship between Gender and Credit Card ownership.
+
+2. Dashboard Highlights (Power BI)
+Income Band Impact: Customers in the "High" income band account for 53.12% of all bank loans ($942.49M).
+
+Product Performance: Business lending is the strongest performing asset at $2.60bn.
+
+Geographic & Occupational Trends: Analysis of loan and deposit volumes broken down by nationality and job sector (Retail, Commercial, Institutional, Private Banking).
+
+🚀 How to Use
+Database Setup: Run the banking_case_database_sql.sql script in your SQL environment to set up the schema.
+
+Run Analysis: Open Banking.ipynb in Jupyter or VS Code. Update the database connection credentials to match your local setup.
+
+View Dashboard: Open Banking Analysis.pbix in Power BI Desktop to interact with the visual reports.
